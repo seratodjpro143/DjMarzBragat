@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090911">
+  <meta name="description" content="DJMARZ — DJ, music, events and bookings.">
+  <title>DJMARZ | Official DJ Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="DJMARZ home"><span class="brand-mark">M</span><span>DJ<span class="accent">MARZ</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking" class="nav-cta">Book DJMARZ <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> OFFICIAL DJ WEBSITE</p>
+          <h1>TURN UP<br>THE <span class="gradient-text">ENERGY.</span></h1>
+          <p class="hero-description">The sound. The lights. The moment.<br>Welcome to the official home of DJMARZ.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#music">▶ Explore the music</a>
+            <a class="button button-outline" href="#booking">Book for an event ↗</a>
+          </div>
+          <div class="hero-meta"><span>DJMARZ BRAGAT</span><span class="meta-line"></span><span>FREELANCE DJ</span></div>
+        </div>
+        <div class="hero-art" aria-label="Abstract neon DJ artwork">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="vinyl"><div class="vinyl-label"><span>DJ</span><b>MARZ</b><small>ON THE MIX</small></div></div>
+          <div class="soundbar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="art-tag tag-top">MIX • VIBE • REPEAT</div><div class="art-tag tag-bottom">EST. YOUR NEXT PARTY</div>
+        </div>
+        <a class="scroll-hint" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-label">01 / ABOUT</div>
+        <div class="section-heading-row"><h2>GOOD MUSIC.<br><span class="muted-heading">UNFORGETTABLE VIBES.</span></h2><p class="section-intro">Every crowd has a rhythm. DJMARZ brings the energy with music made for the moment.</p></div>
+        <div class="about-grid">
+          <div class="about-card"><span class="big-number">01</span><h3>THE SOUND</h3><p>From party anthems to smooth transitions, build a set that keeps the floor moving.</p></div>
+          <div class="about-card"><span class="big-number">02</span><h3>THE VIBE</h3><p>Birthdays, celebrations, community events and special nights deserve a soundtrack.</p></div>
+          <div class="about-card"><span class="big-number">03</span><h3>THE MOMENT</h3><p>Bring your event idea. Let's make a night your guests will remember.</p></div>
+        </div>
+      </section>
+
+      <section class="section music-section" id="music">
+        <div class="section-label">02 / MUSIC</div>
+        <div class="section-heading-row"><h2>PRESS PLAY.<br><span class="gradient-text">FEEL THE BEAT.</span></h2><p class="section-intro">Add your own MP3 mixes from your computer and play them right here in the browser.</p></div>
+        <div class="player-card">
+          <div class="player-disc"><div class="disc-center">M<span>DJMARZ</span></div></div>
+          <div class="player-content">
+            <div class="track-top"><div><p class="eyebrow">DJMARZ PLAYER</p><h3 id="trackTitle">Choose your first mix</h3><p id="trackSubtitle" class="track-subtitle">Your music, your energy.</p></div><span class="equalizer" id="equalizer"><i></i><i></i><i></i><i></i><i></i></span></div>
+            <audio id="audioPlayer" preload="metadata"></audio>
+            <div class="progress-wrap"><span id="currentTime">0:00</span><input id="progress" type="range" min="0" max="100" value="0" aria-label="Track progress"><span id="duration">0:00</span></div>
+            <div class="player-controls"><button id="prevTrack" class="control-button" aria-label="Previous track">|◀</button><button id="playButton" class="play-button" aria-label="Play">▶</button><button id="nextTrack" class="control-button" aria-label="Next track">▶|</button><label class="volume-control">VOL <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume"></label></div>
+            <div class="track-list" id="trackList"><p class="empty-tracks">No tracks added yet. Choose MP3 files below to get started.</p></div>
+            <label class="upload-button" for="audioFiles">＋ Add music files (MP3, WAV, OGG)</label><input id="audioFiles" type="file" accept="audio/*" multiple hidden>
+            <p class="small-note">Files selected here play on this device only. To share music with visitors, add audio files to your website folder and update the track list in <code>script.js</code>. Only upload music you have permission to share.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-label">03 / GALLERY</div>
+        <div class="section-heading-row"><h2>LIGHTS ON.<br><span class="muted-heading">CAMERAS UP.</span></h2><p class="section-intro">Swap these artwork panels for your own DJ photos, event posters, and setup pictures.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-tile gallery-one"><span class="tile-index">01</span><div><span class="tile-kicker">THE SETUP</span><h3>READY TO MIX</h3></div></div>
+          <div class="gallery-tile gallery-two"><span class="tile-index">02</span><div><span class="tile-kicker">THE CROWD</span><h3>FEEL THE ENERGY</h3></div></div>
+          <div class="gallery-tile gallery-three"><span class="tile-index">03</span><div><span class="tile-kicker">THE LIGHTS</span><h3>MAKE IT A NIGHT</h3></div></div>
+        </div>
+        <p class="gallery-tip">Tip: put your pictures in an <code>images</code> folder and replace each tile's background in <code>style.css</code>.</p>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="booking-orb"></div>
+        <div class="section-label">04 / BOOKINGS</div>
+        <h2>LET'S MAKE<br><span class="gradient-text">SOME NOISE.</span></h2>
+        <p>Planning a birthday, party, or special event? Send DJMARZ your event details.</p>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row"><label>Your name<input id="contactName" name="name" type="text" placeholder="Enter your name" required></label><label>Your email<input id="contactEmail" name="email" type="email" placeholder="you@example.com" required></label></div>
+          <label>Event details<textarea id="contactMessage" name="message" rows="4" placeholder="Event date, location, type of event..." required></textarea></label>
+          <button class="button button-primary" type="submit">Prepare booking email ↗</button>
+          <p class="small-note">This opens your email app to send the message. Update the booking email address in <code>script.js</code> before publishing.</p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">M</span><span>DJ<span class="accent">MARZ</span></span></a><p>MADE FOR THE MUSIC. BUILT FOR THE VIBE.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year"></span> DJMARZ. All rights reserved.</small></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
